@@ -382,48 +382,4 @@ line-height: normal;
     bottom: 100px;
     right: 20px;
   }
-
-
 }
-
-/* README */
-/* using child elements */
-/* .casts {
-    width: 315px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 30px 30px 50px 0px;
-  }
-  .casts img:nth-child(1) {
-    width: 45px;
-    height: 17px;
-    flex-shrink: 0;
-  }
-  .casts img:nth-child(2) {
-    width: 45px;
-    height: 17px;
-    flex-shrink: 0;
-  } */
-
-/* using position absolute, relative property
-  .img-layover {
-    position: absolute;
-  }
-  .mobile-singer-img {
-    width: 100%;
-    opacity: 0.1;
-  } */
-
-/* position: relative;  Relative positioning for absolute child 
-  overflow: hidden;  Hide overflow content  */
-
-/* Give display: flex; order: n; position place
-  .casts {
-    display: flex;
-    width: 536px;
-    position: relative;
-    order: 2;
-    margin: 0 0 0px;
-  }
-   */
