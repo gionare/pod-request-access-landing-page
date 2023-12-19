@@ -91,11 +91,6 @@ submit_btn.addEventListener("click", (event) => {
 
 continue focusing on in future projects. completely comfortable with useful techniques, want to refine and perfect.
 
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
 ## Author
 
 - Website - [Giorgi Nareklishvili Portfolio](https://portfolio-giorgi-nareklishvili.vercel.app/)
