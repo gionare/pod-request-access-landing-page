@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;1,600&family=Barlow:ital,wght@0,300;0,500;0,700;0,900;1,500;1,900&family=Chivo&family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500;1,700;1,800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&family=Poppins:wght@200;400;600&family=Red+Hat+Display:wght@300;500;700;900&display=swap");
+/* font-family: 'Barlow', sans-serif;
+font-family: 'Barlow Semi Condensed', sans-serif;
+font-family: 'Chivo', sans-serif;
+font-family: 'Hanken Grotesk', sans-serif;
+font-family: 'Plus Jakarta Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Red Hat Display', sans-serif; */
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Chivo", sans-serif;
+  background: #121725;
+}
+.card {
+  /* border: solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Relative positioning for absolute child */
+  overflow: hidden; /* Hide overflow content */
+  width: 375px;
+}
+/* _________ image backgrounds / position: absolute; ____________ */
+.tablet-singer-img,
+.desktop-singer-img,
+.dots {
+  display: none;
+}
+.img-layover {
+  position: absolute;
+}
+.mobile-singer-img {
+  height: 667px;
+  opacity: 0.1;
+  /* width: 100%; Ensure the image takes 100% width of its container 
+    height: auto;  Maintain aspect ratio 
+    display: block;  Remove extra spacing reserved for inline elements */
+}
+/* header logo */
+.logo {
+  margin-top: 72px;
+  margin-bottom: 67px;
+}
+/* __________ C O N T E N T ____________ */
+.content {
+  /* border: solid; */
+  width: 327px;
+}
+.content h2 {
+  color: #54e6af;
+  font-family: Chivo;
+  text-align: center;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px; /* 146.154% */
+  text-transform: uppercase;
+}
+.highlight {
+  color: #fff;
+}
+.content p {
+  color: #c2cbe5;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+}
+
+.casts {
+  width: 315px;
+  position: relative;
+  z-index: 4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px 30px 50px 0px;
+}
+.casts img:nth-child(1) {
+  width: 55px;
+  height: 17px;
+  flex-shrink: 0;
+}
+.casts img:nth-child(2) {
+  width: 50px;
+  height: 17px;
+  flex-shrink: 0;
+}
+.casts img:nth-child(3) {
+  width: 80px;
+  height: 12px;
+  flex-shrink: 0;
+}
+.casts img:nth-child(4) {
+  width: 77px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+/* _______________ .input_button _______________- */
+.input_button {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 327px;
+  gap: 16px;
+}
+#email {
+  background: #2c344b;
+  border-radius: 30px;
+  height: 46px;
+  padding-left: 32px;
+  border: none;
+}
+/* give style inside input field place holder */
+::placeholder {
+  color: #fff;
+  font-family: Chivo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 200% */
+  opacity: 0.5;
+}
+.btn {
+  border: none;
+  height: 46px;
+  border-radius: 30px;
+  background: #54e6af;
+  box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.5);
+}
+#request-btn {
+  color: #121725;
+  font-family: Chivo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.btn:hover {
+  transition: 0.4s;
+  background: #04eb93;
+  cursor: pointer;
+  box-shadow: 20px 25px 45px 2px #03ef957f;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .card {
+    border: solid;
+    overflow: hidden;
+    width: 768px;
+    height: 1024px;
+  }
+  .img-layover {
+    position: absolute;
+  }
+
+  .mobile-singer-img,
+  .desktop-singer-img,
+  .dots {
+    display: none;
+  }
+
+  .tablet-singer-img {
+    height: 767px;
+    opacity: 0.1;
+    display: block;
+    position: absolute;
+    top: -550px;
+    right: -590px;
+
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 635px;
+    background-color: #121725;
+    position: absolute;
+    /* border: solid; */
+  }
+  .content h2 {
+    font-size: 48px;
+    line-height: 56px;
+    margin-top: 90px;
+    text-align: left;
+  }
+  .content p {
+    width: 445px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+  }
+/*  _________________ C A S T S */
+  .casts {
+    display: flex;
+    width: 536px;
+    position: relative;
+    order: 2;
+    margin: 0 0 0px;
+  }
+  .casts img:nth-child(1) {
+    width: 96px;
+height: 29px; 
+    flex-shrink: 0;
+  }
+  .casts img:nth-child(2) {
+    width: 78px;
+    height: 29px; 
+    flex-shrink: 0;
+  }
+  .casts img:nth-child(3) {
+    width: 125px;
+height: 18px; 
+    flex-shrink: 0;
+  }
+  .casts img:nth-child(4) {
+    width: 129px;
+height: 26px; 
+    flex-shrink: 0;
+  }
+  /*_________________ .input_button  */
+  .input_button {
+    display: flex;
+    order: 1;
+    margin: 20px 0 60px;
+    /* position: absolute; */
+  }
+  #email {
+    position: absolute;
+    width: 427px;
+    /* margin-bottom: 90px; */
+  }
+  .btn {
+    position: relative;
+    margin-left: 297px;
+    width: 162px;
+  }
+  .dots {
+    position: relative;
+    display: flex;
+    margin-top: 150px;
+    margin-left: 39px;
+    z-index: 4;
+}
+}
+
+/* README */
+/* using child elements */
+/* .casts {
+    width: 315px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 30px 50px 0px;
+  }
+  .casts img:nth-child(1) {
+    width: 45px;
+    height: 17px;
+    flex-shrink: 0;
+  }
+  .casts img:nth-child(2) {
+    width: 45px;
+    height: 17px;
+    flex-shrink: 0;
+  } */
+
+/* using position absolute, relative property
+  .img-layover {
+    position: absolute;
+  }
+  .mobile-singer-img {
+    width: 100%;
+    opacity: 0.1;
+  } */
+
+/* position: relative;  Relative positioning for absolute child 
+  overflow: hidden;  Hide overflow content  */
